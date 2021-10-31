@@ -23,13 +23,13 @@ body{
   -moz-box-shadow: 9px 9px 10px -1px rgba(112,112,112,0.75); */
 }
 .container.day{
-  background-image: url(/src/imgs/sunny-wall.jpg);
+  background-image: url(./src/imgs/day-wall.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .container.night{
-  background-image: url(/src/imgs/night-wall.jpg);
+  background-image: url(./src/imgs/night-wall.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
