@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>No te mojes!</title>
+  <link rel="stylesheet" href="./src/styles/styles.css">
+</head>
+<body>
+  <main class="container" id="container">
+
+    <section class="inputTemp">
+      <form id="search__submit" class="search__submit">
+        <input type="text" class="search" autocomplete="off" id="search__input" placeholder="Introduce tu localización">
+        <button type="submit"></button>
+      </form>
+      <div class="inputTemp__description" id="description"></div>
+      <div class="inputTemp__number">
+        <div class="inputTemp__celcius" id="degree-number">-</div>
+        <div class="inputTemp__symbol">°C</div>
+      </div>
+      <div id="weather-icon"></div>
+    </section>
+    <section class="location">
+      <div class="location__city" id="timezone"></div>
+      <div class="location__date" id="date"></div>
+    </section>
+
+    <section class="weather">
+      <div class="weather__min"><small>min</small><span id="min"></span>°C</div>
+      <div class="weather__max"><small>max</small><span id="max"></span>°C</div>
+    </section>
+    
+  </main>
+
+  <SCript src="./src/js/main.js"></SCript>
+</body>
+</html>

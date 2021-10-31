@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+body{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  width: 100vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* border-radius: 1rem; */
+  /* box-shadow: 9px 9px 10px -1px rgba(112,112,112,0.75);
+  -webkit-box-shadow: 9px 9px 10px -1px rgba(112,112,112,0.75);
+  -moz-box-shadow: 9px 9px 10px -1px rgba(112,112,112,0.75); */
+}
+.container.day{
+  background-image: url(/src/imgs/sunny-wall.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.container.night{
+  background-image: url(/src/imgs/night-wall.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.inputTemp{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex: 0.2;
+  margin: 1rem auto;
+  width: 280px;
+}
+.search__submit{
+  display: flex;
+}
+.search__submit > button{
+  visibility: hidden;
+}
+.search{
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 15px 0 15px 0;
+  border: none;
+  border-bottom: 3px solid rgba(255, 99, 71, 0.753);
+  transition: 0.2s ease-out;
+}
+.search:focus{
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.inputTemp__number{
+  display: flex;
+  align-items: center;
+}
+.inputTemp__celcius{
+  text-align: center;
+  color: whitesmoke;
+  font-weight: bolder;
+  font-size: 7rem;
+}
+.inputTemp__symbol{
+  font-size: 4rem;
+  color: whitesmoke;
+}
+.location{
+  flex: 0.4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.location__date{
+  margin: 2rem;
+}
+.inputTemp__description{
+  margin-top: 2vh;
+}
+.inputTemp__description, .location__city{
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: #333;
+}
+.container.night .inputTemp__description{
+  color: whitesmoke;
+}
+.container.night .location__city{
+  color: whitesmoke;
+}
+.container.night .weather__min, .container.night .weather__max{
+  color: whitesmoke;
+}
+.container.night .location__date{
+  color: whitesmoke;
+  font-weight: bolder;
+}
+.weather{
+  display: flex;
+  flex: 0.4;
+  justify-content: space-around;
+  align-items: center;
+  letter-spacing: 5px;
+}
+.weather__min > span{
+  font-size: 3rem;
+  color: blue;
+}
+.weather__max > span{
+  font-size: 3rem;
+  color: tomato;
+}
