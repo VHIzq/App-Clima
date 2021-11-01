@@ -12,7 +12,7 @@ body{
   align-items: center;
 }
 .container{
-  width: 100vh;
+  width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -23,13 +23,13 @@ body{
   -moz-box-shadow: 9px 9px 10px -1px rgba(112,112,112,0.75); */
 }
 .container.day{
-  background-image: url(./src/imgs/day-wall.jpg);
+  background-image: url(../imgs/day-wall.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .container.night{
-  background-image: url(./src/imgs/night-wall.jpg);
+  background-image: url(../imgs/night-wall.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -40,11 +40,12 @@ body{
   align-items: center;
   justify-content: space-between;
   flex: 0.2;
-  margin: 1rem auto;
+  margin: 1.5rem auto;
   width: 280px;
 }
 .search__submit{
   display: flex;
+  width: 80%;
 }
 .search__submit > button{
   visibility: hidden;

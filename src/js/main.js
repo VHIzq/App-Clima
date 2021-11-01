@@ -19,7 +19,7 @@ const displayBackgroundImage = (obj) => {
   });
   console.log(dateHuman);
   //indicar hora
-  $date.textContent = `Actualización ${dateHuman}`
+  $date.textContent = `Actualizada al ${dateHuman}`
   //Convertirlo a hora entendible
   const dayHour = new Date().getHours();
   //logica
